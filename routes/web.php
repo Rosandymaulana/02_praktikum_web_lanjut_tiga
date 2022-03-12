@@ -14,9 +14,13 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', function () {
-    echo "<h1>EducaStudio<br></h1>";
-    echo "Halaman Awal";
+    return view('/main');
 });
+
+// Route::get('/', function () {
+//     echo "<h1>EducaStudio<br></h1>";
+//     echo "Halaman Awal";
+// });
 
 Route::prefix('category')->group(function () {
     Route::get('/marbel-edu-games', function () {
